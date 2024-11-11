@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+.scroll-wrapper {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    margin: 2px solid red;
+}
+
+.scroll-wrapper .scroll {
+    display: flex;
+    width: 250%; /* Double the width to accommodate two sets of content */
+    font-family: 'Kanit', sans-serif;
+    background: #000;
+}
+
+.scroll-wrapper .text1 div,
+.scroll-wrapper .text2 div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    font-size: 2.5em;
+    white-space: nowrap;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    animation: marquee 60s linear infinite;
+}
+
+.scroll-wrapper .text2 div {
+    animation: marquee2 60s linear infinite;
+}
+
+.scroll-wrapper .scroll div i {
+    margin: 0 30px;
+}
+
+.scroll-wrapper .scroll div span {
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+
+.scroll-item {
+    display: flex;
+    align-items: center;
+    padding-right: 50px; /* Add space between repeated elements */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* Move by half the width */
+    }
+}
+
+@keyframes marquee2 {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0); /* Moves from left to right */
+    }
+}
+
+/* Medium screen adjustments */
+@media (max-width: 1024px) {
+    .scroll-wrapper{
+        height: 100px;
+    }
+    .scroll-wrapper .scroll div {
+        font-size: 2.2em;
+    }
+}
+
+/* Small screen adjustments */
+@media (max-width: 768px) {
+    .scroll-wrapper{
+        height: 88px;
+    }
+    .scroll-wrapper .scroll div {
+        font-size: 2em;
+        letter-spacing: 3px; /* Adjust letter-spacing for better readability */
+    }
+}
+
+/* Extra small screen adjustments */
+@media (max-width: 480px) {
+    .scroll-wrapper{
+        height: 70px;
+    }
+    .scroll-wrapper .scroll div {
+        font-size: 1.5em;
+        letter-spacing: 2px; /* Narrower spacing for very small screens */
+    }
+}

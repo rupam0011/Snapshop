@@ -1,0 +1,103 @@
+/* Scoped reset styles for accordion */
+.accordion-container * {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  .accordion-container {
+    width: 90%;
+    
+    /* border: 2px solid red; */
+  }
+  
+  /* Accordion item styling */
+  .accordion-item {
+    background: transparent;
+
+    border: none; /* Remove the border around the item */
+    /* margin-bottom: 1rem;  */
+  }
+  
+  /* Horizontal line (hr) styling after each accordion item */
+  .accordion-item hr {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin: 0; /* Removes default margins */
+  }
+  
+  /* Accordion link styles */
+  .accordion-link {
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    cursor: pointer; /* Make the entire link clickable */
+  }
+  
+  /* Styling for the accordion link heading */
+  .accordion-link h3 {
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-left: 25px;
+  }
+  .accordion-link h3:hover{
+    color: white;
+  }
+  /* Icon styling for arrows */
+  .accordion-link i {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0.5rem;
+  }
+  
+  /* Answer (content) styling for each accordion item */
+  .answer {
+    max-height: 0;
+    overflow: hidden;
+    background: transparent;
+    transition: max-height 650ms ease-in-out;
+  }
+  
+  /* Text inside the answer (content) */
+  .answer p {
+    color: #fff;
+    font-size: 15px;
+    padding: 1.5rem;
+  }
+  
+  /* When accordion item is targeted, expand the answer */
+  .accordion-item.active .answer {
+    max-height: 20rem; /* Adjust to fit content */
+  }
+  
+  /* When accordion item is active, hide the right arrow */
+  .accordion-item.active .accordion-link .bi-arrow-right-short {
+    display: none;
+  }
+  
+  /* When accordion item is active, show the down arrow */
+  .accordion-item.active .accordion-link .bi-arrow-down-short {
+    display: block;
+  }
+  
+  /* Always show the right arrow by default */
+  .accordion-link .bi-arrow-right-short {
+    display: block;
+  }
+  
+  /* Hide the down arrow by default */
+  .accordion-link .bi-arrow-down-short {
+    display: none;
+  }
+  
+  /* Remove any border that Bootstrap may add by default */
+  .accordion-link:focus,
+  .accordion-link:active {
+    outline: none;
+    border: none;
+  }
+  

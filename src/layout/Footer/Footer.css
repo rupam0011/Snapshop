@@ -1,0 +1,121 @@
+.full_footer {
+    background: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+#footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_main {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+.footer_main .footer_tag .footer_logo {
+    padding-top: 0%;
+}
+
+.footer_main .footer_tag .footer_logo span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: 6px;
+}
+
+.footer_main .footer_tag .footer_logo .social_footer {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-top: 15px;
+}
+
+.footer_main .footer_tag .footer_logo .social_footer i {
+    font-size: 1.3rem;
+}
+
+.footer_main .footer_tag h4 {
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+.footer_main .footer_tag p {
+    margin: 5px 0;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.footer_main .footer_tag p:hover {
+    color: #fff;
+}
+
+.full_footer .copyright_footer {
+    padding-bottom: 10px;
+}
+
+.full_footer .copyright_footer p {
+    margin: 0;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer_main {
+        flex-direction: column;
+        /* border: 2px solid red; */
+        /* align-items: center; */
+        /* text-align: center; */
+    }
+
+    .footer_main .footer_tag {
+        margin-bottom: 20px;
+        width: 100%;
+        /* border: 2px solid red; */
+    }
+
+    .footer_main .footer_tag .footer_logo span {
+        font-size: 3rem;
+        /* border: 2px solid red; */
+    }
+
+    .footer_main .footer_tag .footer_logo .social_footer {
+        /* justify-content: center; */
+        width: 46%;
+        /* border: 2px solid red; */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer_main .footer_tag .footer_logo span {
+        font-size: 2.5rem;
+        letter-spacing: 3px;
+    }
+
+    .footer_main .footer_tag p {
+        font-size: 16px;
+    }
+
+    .footer_main .footer_tag .footer_logo .social_footer{
+        /* justify-content: center; */
+        width: 67%;
+        /* border: 2px solid red; */
+    }
+    .footer_main .footer_tag .footer_logo .social_footer i{
+        /* justify-content: center; */
+        font-size: 17px;
+        /* border: 2px solid red; */
+    }
+
+    .footer_main .footer_tag h4 {
+        font-size: 1.2rem;
+    }
+}

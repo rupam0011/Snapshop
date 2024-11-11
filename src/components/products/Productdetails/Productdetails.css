@@ -1,0 +1,126 @@
+/* ProductDetail.css */
+
+.product-detail-container {
+    padding: 2rem;
+    /* border: 2px solid red; */
+  }
+  
+  .image-thumbnails {
+    text-align: center;
+    /* border: 2px solid red; */
+    
+
+
+    /* width: 150px; */
+  }
+  
+  .thumbnail-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    /* border: 2px solid rgb(65, 122, 0); */
+   
+   
+  }
+  
+  .thumbnail {
+    width: 70%; /* Adjust thumbnail width */
+     height: 165px;
+    margin-bottom: 1rem;
+    box-shadow:  0px 0px 10px 1px rgba(0,0,0,0.1);
+    /* border: 1px solid #7418ff;  */
+    object-fit: cover;
+  }
+ .rightside{
+    /* border: 2px solid blue; */
+    display: flex;
+ }
+ .rightside .details-content{
+    /* border: 2px solid yellow; */
+    width: 60%;
+    padding-left:40px ;
+ }
+
+ .details-content .brandName{
+    font-size: 20px;
+    /* border: 2px solid red; */
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #999999;
+ }
+  
+  .main-image-wrapper {
+    text-align: center; /* Center align the main image */
+    margin-bottom: 2rem; /* Add some margin below */
+    /* border: 2px solid red; */
+    width: 40%;
+    height: 530px;
+    
+  }
+  
+  .main-image {
+    width: 100%; /* Adjust main image width */
+    height: 100%;
+    object-fit: contain;
+    box-shadow:  0px 0px 10px 1px rgba(0,0,0,0.1);
+  }
+  
+  h2 {
+    font-weight: bold;
+  }
+  
+  .rating span {
+    color: #888;
+  }
+  
+ 
+  .real-price{
+    font-size: 25px;
+  }
+  .original-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-left: 10px;
+    font-size: 15px;
+  }
+  
+  .product-options h5 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .product-options .btn-group .btn {
+    margin-right: 10px;
+  }
+  
+  .cart-options {
+    margin-top: 20px;
+    
+  }
+  
+  .cart-options .add-to-cart-btn {
+    background-color: #000;
+    color: #fff;
+    --bs-btn-active-bg: #212121;
+   
+  }
+
+  .cart-options .add-to-cart-btn:hover{
+    background-color: #212121;
+  }
+  
+  .cart-options .wishlist-btn {
+    background-color: transparent;
+    color: #000;
+    --bs-btn-active-bg: #000000;
+    --bs-btn-active-border-color: #000000;
+    --bs-btn-hover-border-color: #000000;
+    border: 1px solid #000;
+    margin-left: 10px;
+  }
+  
+  .cart-options .wishlist-btn:hover{
+    background-color: #000;
+    color: white;
+    
+  }
